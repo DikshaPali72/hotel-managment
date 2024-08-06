@@ -1,0 +1,23 @@
+
+/* ContactUsPage.css */
+
+.slide-right-appear {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  .slide-right-appear-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 2000ms, opacity 2000ms;
+  }
+  
+  .slide-left-appear {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  .slide-left-appear-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 2000ms, opacity 2000ms;
+  }
+    

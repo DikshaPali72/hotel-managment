@@ -7,6 +7,7 @@ import HomePage from './Components/Pages/HomePage'
 import HotelSearch from './Components/Pages/HotelSearch'
 import ConfirmPage from './Components/Pages/ConfirmPage'
 import PaymentPage from './Components/Pages/PaymentPage'
+import ContactUsPage from './Components/Pages/ContactUsPage'
 
 function App() {
 
@@ -41,6 +42,10 @@ const router =createBrowserRouter([
   {
     path:"/PaymentPage",
     element:<><Navbar/><PaymentPage/></>
+  },
+  {
+    path:"/ContactUsPage",
+    element:<><Navbar/><ContactUsPage/></>
   },
  
 ])

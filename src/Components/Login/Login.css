@@ -8,3 +8,23 @@
     justify-content: center;
     position: relative;
 }
+.slide-up-appear {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  .slide-up-appear-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 2000ms, opacity 2000ms;
+  }
+  
+  .slide-down-appear {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  .slide-down-appear-active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 2000ms, opacity 2000ms;
+  }
+    
