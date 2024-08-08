@@ -69,7 +69,7 @@ const PaymentPage = () => {
           </button>
           <button
             className="bg-gray-600 text-white px-4 py-2 rounded-md shadow-md hover:bg-gray-700 transition-colors w-full"
-            onClick={() => navigate("/ConfirmBooking", { state: { hotel } })}
+            onClick={() => navigate("/ConfirmPage", { state: { hotel } })}
           >
             Go Back
           </button>

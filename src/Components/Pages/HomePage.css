@@ -54,6 +54,7 @@
     border-radius: 0.25rem;
     font-size: 1rem;
     margin: 0.5rem 0;
+    background-color:rgb(230, 229, 229);
 }
 
 .search-button{
@@ -69,3 +70,5 @@
 .search-button:hover{
     background-color: rgb(5, 110, 155);
 }
+
+  

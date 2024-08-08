@@ -37,7 +37,7 @@ const Login = () => {
   };
 
   return (
-    <div className="flex min-h-screen w-full bg-gray-50 justify-center">
+    <div className="flex min-h-screen w-full bg-gray-50 justify-center  max-md:flex-col">
       <CSSTransition in={true} appear={true} timeout={1000} classNames="slide-up">
         <div className="bg-white p-4 mt-10 rounded-lg h-full sm:max-w-md sm:w-full">
           <h1 className="text-3xl font-bold text-center mb-6">Log in</h1>
@@ -107,7 +107,7 @@ const Login = () => {
         </div>
       </CSSTransition>
       <CSSTransition in={true} appear={true} timeout={1000} classNames="slide-down">
-        <div className="w-[450px] ml-20 mt-10">
+        <div className="w-[450px] ml-20 mt-10  max-md:w-64">
           <img src={loginbg} alt="login background" />
         </div>
       </CSSTransition>

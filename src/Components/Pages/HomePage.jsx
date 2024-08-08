@@ -57,60 +57,60 @@ const HomePage = () => {
     } else {
       setErrors({});
       navigate("/HotelSearch", {
-        
+        // Add your navigation state here if needed
       });
     }
   };
 
   return (
-    <div className="homepage-container " >
-      <div className="overlay">
+    <div className=" bg-cover bg-center min-h-screen flex items-center justify-center homepage-container">
+      <div className="overlay bg-black bg-opacity-50 p-8 rounded-lg">
         <div className="text-center text-white">
-          <h1 className="homepage-title">Welcome to DreamLand</h1>
-          <p className="homepage-subtitle">
+          <h1 className="homepage-title text-4xl md:text-6xl font-bold mb-4">Welcome to DreamLand</h1>
+          <p className="homepage-subtitle text-lg md:text-2xl mb-4">
             Your adventure starts here. Book your hotel now!
             <br />
-            <span className="font-extrabold italic text-5xl">
+            <span className="font-extrabold italic text-3xl md:text-5xl">
               {textArray[textIndex]}
             </span>
           </p>
-          <div className="search-form">
+          <div className="search-form flex flex-col md:flex-row gap-4 items-center">
             <input
               type="text"
               placeholder="Enter Place"
               value={place}
               onChange={(e) => setPlace(e.target.value)}
-              className="search-input"
+              className="search-input p-2 rounded w-full md:w-1/5"
             />
-            {errors.place && <p className="error">{errors.place}</p>}
+            {errors.place && <p className="error text-red-500">{errors.place}</p>}
             <DatePicker
               selected={checkInDate}
               onChange={(date) => setCheckInDate(date)}
               placeholderText="Check-in"
-              className="search-input"
+              className="search-input p-2 rounded w-full md:w-1/5"
               dateFormat="dd/MM/yyyy"
               minDate={new Date()}
             />
-            {errors.checkInDate && <p className="error">{errors.checkInDate}</p>}
+            {errors.checkInDate && <p className="error text-red-500">{errors.checkInDate}</p>}
             <DatePicker
               selected={checkOutDate}
               onChange={(date) => setCheckOutDate(date)}
               placeholderText="Check-out"
-              className="search-input"
+              className="search-input p-2 rounded w-full md:w-1/5"
               dateFormat="dd/MM/yyyy"
               minDate={checkInDate}
             />
-            {errors.checkOutDate && <p className="error">{errors.checkOutDate}</p>}
+            {errors.checkOutDate && <p className="error text-red-500">{errors.checkOutDate}</p>}
             <input
               type="number"
               placeholder="Rooms"
-              className="search-input"
+              className="search-input p-2 rounded w-full md:w-1/5"
               value={rooms}
               onChange={(e) => setRooms(e.target.value)}
               min="1"
             />
-            {errors.rooms && <p className="error">{errors.rooms}</p>}
-            <button type="button" onClick={handleSearch} className="search-button">
+            {errors.rooms && <p className="error text-red-500">{errors.rooms}</p>}
+            <button type="button" onClick={handleSearch} className="search-button p-2 bg-blue-600 text-white rounded w-full md:w-1/5">
               Search
             </button>
           </div>

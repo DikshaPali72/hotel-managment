@@ -4,7 +4,7 @@ import "./ContactUsPage.css"; // Import your CSS file
 
 const ContactUsPage = () => {
   return (
-    <div className="flex items-center  min-h-screen p-4 justify-evenly">
+    <div className="flex items-center  min-h-screen p-4 justify-evenly  max-md:flex-col">
       <CSSTransition in={true} appear={true} timeout={1000} classNames="slide-left">
         <div className="bg-white p-8 rounded-lg shadow-lg max-w-md">
           <h2 className="text-2xl font-bold mb-6 text-center text-blue-600">
